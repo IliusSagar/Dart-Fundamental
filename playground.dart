@@ -1,7 +1,7 @@
-// Null Aware Operator
-// (?.), (??), (??=)
+// Ternary operator
+
 void main() {
-  int? number;
-  print(number ??= 100);
-  print(number);
+  int x = 101;
+  var result = x % 2 == 0 ? 'Even' : 'Odd';
+  print(result);
 }

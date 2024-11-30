@@ -1,14 +1,11 @@
 // Loop
 
 void main() {
-  // forEach loop
-  var numbers = [1, 2, 3];
+  // while loop
+  int num = 5;
 
-  // numbers.forEach((n) => print(n));
-
-  numbers.forEach(printNum);
-}
-
-void printNum(num) {
-  print(num);
+  do {
+    print(num);
+    num -= 1;
+  } while (num > 0);
 }

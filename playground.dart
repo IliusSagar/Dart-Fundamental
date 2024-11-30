@@ -1,34 +1,16 @@
 void main() {
-  /*
-  int
-  double
-  String
-  bool
-  dynamic
-  */
+  var s1 = "single quotes work well for string literals.";
+  var s2 = "Double quotes work just as well.";
+  var s3 = 'It\'s easy to escape the string delimiter.';
+  var s4 = "It's even easier to use the other delimiter.";
 
-  int amount1 = 100;
-  var amount2 = 200;
-  print('Amount1: $amount1 | Amount2: $amount2 \n');
+  print(s1);
+  print(s2);
+  print(s3);
+  print(s4);
+  print('');
 
-  double dAmount1 = 100.11;
-  var dAmount2 = 200.22;
-  print('dAmount1: $dAmount1 | dAmount2: $dAmount2 \n');
-
-  String name1 = 'ilius';
-  var name2 = 'sagar';
-  print('My name is: $name1 $name2 \n');
-
-  bool isItTrue1 = true;
-  var isItTrue2 = false;
-  print('isItTrue1: $isItTrue1 | isItTrue2: $isItTrue2 \n');
-
-  dynamic weakVariable = 100;
-  print('WeakVariable 1: $weakVariable \n');
-
-  weakVariable = 'Dart Programming';
-  print('WeakVariable 2: $weakVariable');
-
-  weakVariable = null;
-  print(weakVariable);
+  //Raw String
+  var s = r'In a raw string, not even \n gets special treatment.';
+  print(s);
 }

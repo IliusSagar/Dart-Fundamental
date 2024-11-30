@@ -1,9 +1,13 @@
-// Type Test
+// Conditional Statement
 
 void main() {
-  var x = 100;
+  int number = 91;
 
-  if (x is int) {
-    print('integer');
+  if (number % 2 == 0) {
+    print('Even');
+  } else if (number % 3 == 0) {
+    print('Odd');
+  } else {
+    print('Confused');
   }
 }

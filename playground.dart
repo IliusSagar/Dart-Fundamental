@@ -1,7 +1,9 @@
-// Ternary operator
+// Type Test
 
 void main() {
-  int x = 101;
-  var result = x % 2 == 0 ? 'Even' : 'Odd';
-  print(result);
+  var x = 100;
+
+  if (x is int) {
+    print('integer');
+  }
 }

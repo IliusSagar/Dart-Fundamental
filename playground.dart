@@ -1,16 +1,8 @@
-// Switch Conditional Statement
+// Loop
 
 void main() {
-  int number = 20;
-
-  switch (number) {
-    case 0:
-      print('Even');
-      break;
-    case 1:
-      print('Odd');
-      break;
-    default:
-      print('Confused');
+  // Standard for loop
+  for (var i = 1; i <= 10; ++i) {
+    print(i);
   }
 }

@@ -1,15 +1,9 @@
 // Collection
-// Spread operator ...
 
 void main() {
-  // List
-  List<String> names = ['Jack', 'Jill'];
+  // Set
+  var halogens = <String>{};
+  Set<String> names = {};
 
-  var names2 = [...names];
-
-  names[1] = 'Mark';
-
-  for (var n in names2) {
-    print(n);
-  }
+  print(names.runtimeType);
 }

@@ -1,13 +1,15 @@
-// break and continue
+// Collection
+// Spread operator ...
 
 void main() {
-  for (var i = 0; i < 10; ++i) {
-    if (i > 5) break;
-    print(i);
-  }
+  // List
+  List<String> names = ['Jack', 'Jill'];
 
-  for (var i = 0; i < 10; ++i) {
-    if (i % 2 == 0) continue;
-    print("Odd: $i");
+  var names2 = [...names];
+
+  names[1] = 'Mark';
+
+  for (var n in names2) {
+    print(n);
   }
 }

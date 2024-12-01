@@ -1,9 +1,9 @@
 // Collection
 
 void main() {
-  // Set
-  var halogens = <String>{};
-  Set<String> names = {};
+  // Map
 
-  print(names.runtimeType);
+  var gifts = {'first': 'Mango', 'second': 'Jack Fruit'};
+
+  print(gifts['second']);
 }

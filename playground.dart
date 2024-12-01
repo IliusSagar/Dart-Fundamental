@@ -1,9 +1,29 @@
-// Function
+// Class
 
-void main() {
-  // print(sum(10, num2: 2));
-  print(sum(2, 2));
-  print(sum(2));
+class Person {
+  String name;
+  int age;
+
+  Person(this.name, [this.age = 18]);
+
+  // named constructor
+  Person.guest()
+      : name = 'Guest',
+        age = 18; // Initialize non-nullable fields directly
+
+  void showOutput() {
+    print(name);
+    print(age);
+  }
 }
 
-dynamic sum(var num1, [var num2]) => num1 + (num2 ?? 0);
+void main() {
+  Person person1 = Person('Sagar');
+  person1.showOutput();
+
+  var person2 = Person('jack', 25);
+  person2.showOutput();
+
+  var person3 = Person.guest();
+  person3.showOutput();
+}

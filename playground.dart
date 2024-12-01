@@ -1,32 +1,27 @@
-class Vehicle {
-  String model;
-  int year;
+// Class
 
-  Vehicle(this.model, this.year) {
-    print(this.model);
-    print(this.year);
-  }
+class X {
+  String name;
+
+  X(this.name);
 
   void showOutput() {
-    print(model);
-    print(year);
+    print(this.name);
+  }
+
+  dynamic square(dynamic val) {
+    return val * val;
   }
 }
 
-class Car extends Vehicle {
-  double price;
-
-  Car(String model, int year, this.price) : super(model, year);
+class Y extends X {
+  Y(String name) : super(name);
 
   @override
   void showOutput() {
-    // Corrected method name
-    super.showOutput();
-    print(this.price);
+    print(this.name);
+    print('Hello');
   }
 }
 
-void main() {
-  var car1 = Car('Accord', 2014, 150000);
-  car1.showOutput();
-}
+void main() {}

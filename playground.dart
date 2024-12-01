@@ -1,9 +1,16 @@
-// Collection
+// Function
 
 void main() {
-  // Map
+  showOutput(square(2));
+  showOutput(square(2.5));
 
-  var gifts = {'first': 'Mango', 'second': 'Jack Fruit'};
+  print(square.runtimeType);
+}
 
-  print(gifts['second']);
+dynamic square(var num) {
+  return num * num;
+}
+
+void showOutput(var msg) {
+  print(msg);
 }

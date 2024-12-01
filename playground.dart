@@ -1,13 +1,9 @@
 // Function
 
 void main() {
-  // Arrow Function    =>
-  showOutput(square(2));
-  showOutput(square(2.5));
-}
+  var list = ['apples', 'bananas', 'oranges'];
 
-dynamic square(var num) => num * num;
-
-void showOutput(var msg) {
-  print(msg);
+  list.forEach((item) {
+    print(item);
+  });
 }

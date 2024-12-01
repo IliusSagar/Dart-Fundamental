@@ -1,21 +1,29 @@
-// Class
-// Getters and Setters
+// Exception Handling
 
-class Rectangle {
-  num left, top, width, height;
+int mustGreaterThanZero(int val) {
+  if (val <= 0) {
+    throw Exception('Value must be greater than zero');
+  }
+  return val;
+}
 
-  Rectangle(this.left, this.top, this.width, this.height);
+void letVerifyTheValue(var val) {
+  var valueVerfication;
 
-  // Define two calculated properties: right and bottom
-  num get right => left + width;
-  set right(num value) => left = value - width;
-  num get bottom => top + height;
-  set bottom(num value) => top = value - height;
+  try {
+    valueVerfication = mustGreaterThanZero(val);
+  } catch (e) {
+    print(e);
+  } finally {
+    if (valueVerfication == null) {
+      print('Value is not accepted');
+    } else {
+      print('Value verified: $valueVerfication');
+    }
+  }
 }
 
 void main() {
-  var rect = Rectangle(3, 4, 20, 15);
-  print(rect.left);
-  rect.right = 12;
-  print(rect.left);
+  letVerifyTheValue(10);
+  letVerifyTheValue(0);
 }

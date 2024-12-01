@@ -1,27 +1,21 @@
 // Class
+// Getters and Setters
 
-class X {
-  String name;
+class Rectangle {
+  num left, top, width, height;
 
-  X(this.name);
+  Rectangle(this.left, this.top, this.width, this.height);
 
-  void showOutput() {
-    print(this.name);
-  }
-
-  dynamic square(dynamic val) {
-    return val * val;
-  }
+  // Define two calculated properties: right and bottom
+  num get right => left + width;
+  set right(num value) => left = value - width;
+  num get bottom => top + height;
+  set bottom(num value) => top = value - height;
 }
 
-class Y extends X {
-  Y(String name) : super(name);
-
-  @override
-  void showOutput() {
-    print(this.name);
-    print('Hello');
-  }
+void main() {
+  var rect = Rectangle(3, 4, 20, 15);
+  print(rect.left);
+  rect.right = 12;
+  print(rect.left);
 }
-
-void main() {}
